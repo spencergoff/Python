@@ -1,1 +1,1 @@
-This repo contains my personal solutions to various coding challenges that I've successfully completed or are working on. One source of these coding challenges is codefights.com.
+This repo contains my personal solutions to various coding challenges that I've successfully completed or are working on. I'll be using Python, a language I began learning in October of 2017. One source of these coding challenges is codefights.com.
