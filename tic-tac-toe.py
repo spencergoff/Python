@@ -62,8 +62,8 @@ def gameOver():
                 break
             elif x == 8:
                 print("Tie Game!")
-                playAgain = input("Enter a 'y' to play another game.")
-                if playAgain == 'y':
+                playAgain = raw_input("Enter a y to play another game.")
+                if playAgain == "y":
                     resetBoard()
                     return False
                 else:
@@ -74,16 +74,16 @@ def gameOver():
 
     if winner == 'X':
         print("Player1 Wins the Game!")
-        playAgain = input("Enter a 'y' to play another game.")
-        if playAgain == 'y':
+        playAgain = raw_input("Enter a y to play another game.")
+        if playAgain == "y":
             resetBoard()
             return False
         else:
             return True
     elif winner == 'O':
         print("Player2 Wins the Game!")
-        playAgain = input("Enter a 'y' to play another game.")
-        if playAgain == 'y':
+        playAgain = raw_input("Enter a y to play another game.")
+        if playAgain == "y":
             resetBoard()
             return False
         else:
