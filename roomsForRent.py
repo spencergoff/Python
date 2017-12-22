@@ -34,17 +34,17 @@ for result in housingQuery.get_results(sort_by='newest', geotagged=True):
         break
 
 
-fromaddr = 'otherspencer@gmail.com'
-toaddr = 'otherspencer@gmail.com'
+fromaddr = 'FROM EMAIL ADDRESS' #change to appropriate sender's email address
+toaddr = 'TO EMAIL ADDRESS' #change to appropriate receiver's email address
 msg = MIMEMultipart()
-msg['From'] = 'otherspencer@gmail.com'
-msg['To'] = 'otherspencer@gmail.com'
+msg['From'] = fromaddr
+msg['To'] = toaddr
 msg['Subject'] = 'CRAIGSLIST ROOMS FOR RENT'
 
 msg.attach(MIMEText(emailString, 'plain'))
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login(fromaddr, 'blahblah1995')
+server.login(fromaddr, 'SENDERS EMAIL ACCOUNT PASSWORD') #change to include appropriate password
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()
