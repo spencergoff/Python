@@ -1,12 +1,15 @@
-"""craigslist documentation: https://github.com/juliomalegria/python-craigslist
-   email documentation: http://naelshiab.com/tutorial-send-email-python/"""
+"""
+This program queries Craigslist for the paramets specified in housingQuery, then
+sends an email with the results.
+craigslist documentation: https://github.com/juliomalegria/python-craigslist
+email documentation: http://naelshiab.com/tutorial-send-email-python/
+
+"""
 
 from craigslist import CraigslistHousing #use "pip install python-craigslist" to install module
 import json
 import smtplib
-#from email.MIMEMultipart import MIMEMultipart
 from email.mime.multipart import MIMEMultipart
-#from email.MIMEText import MIMEText
 from email.mime.text import MIMEText
 
 count = 0
